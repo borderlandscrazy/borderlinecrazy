@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/7WBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50;
+}
+
+h1 {
+    color: #fff;
+    font-size: 80px;
+}
+
+p {
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card-container {
+    margin-left: 100px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(3, 1fr); /* Three rows */
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+    width: 150px;
+    height: 180px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.h5p{
+    background: linear-gradient(to bottom, #4b4a4a, #9191913c);
+    padding: 5px;
+    color: #FFF;
+    background-size: 100% auto;
+}
+
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
+
+.card1 {
+    background-image: url(Images/Colosseum.jpg);
+}
+
+.card2 {
+    background-image: url(Images/CtR.jpg);
+    
+}
+
+.card3 {
+    background-image: url(Images/GWoC.jpg);
+}
+
+.card4 {
+    background-image: url(Images/Petra.jpg);
+    
+}
+
+.card5 {
+    background-image: url(Images/ChichenItza.jpg);
+}
+
+.card6 {
+    background-image: url(Images/MachuPicchu.jpg);
+    
+}
+
+.card7 {
+    background-image: url(Images/TajMahal.jpg);
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    margin-top: 10px;
+    margin-right: 200px;
+}
+
+.ExploreBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .ExploreBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .ExploreBtn:hover span {
+    padding-right: 25px;
+  }
+  
+  .ExploreBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
